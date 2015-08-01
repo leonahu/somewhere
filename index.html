@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Take me to somewhere</title>
+		<meta name="description" content="Find places that fits my mood" />
+		<meta name="keywords" content="weather, travel, booking, flight" />
+		<meta name="author" content="Leona Hu" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="">
+		<div class="container demo-1">
+
+			<header>
+				<h1>Take Me to Somewhere Please <span>Travel Itinerary Search by Weather</span></h1>
+			</header>
+
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+					I would like to go to somewhere is
+					<select>
+						<option value="1" selected>Sunny</option>
+						<option value="2">Rainy</option>
+						<option value="3">Windy</option>
+					</select>
+					, and is
+					<select>
+						<option value="1" selected>really close to </option>
+						<option value="2">far away from</option>
+					</select>
+
+					where I live
+
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Find me a flight!</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div><!-- /container -->
+
+		<nav>
+			<a href="#">About the Project</a>
+		</nav>
+
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+
+	</body>
+</html>
